@@ -153,6 +153,11 @@
     transform: scaleX(1);
 }
 
+.btn-pink:hover {
+    border: solid 3px #e84949;
+    color: black;
+}
+
 .hero-section-right {
     position: relative;
 }
@@ -730,51 +735,151 @@ footer {
   
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .nav-items {
-      width: 100%;
-      padding: 0.5rem 0;
-    }
-    .nav-items div {
-      text-align: center;
-    }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
 
-    .hero-section {
-        flex-direction: column;
-        gap: 2rem;
-        text-align: center;
-    }
+  .nav-items {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 15px;
+    margin-top: 1rem;
+  }
 
-    .faded-text {
-        font-size: 4em;
-        bottom: -10%;
-        left: 1rem;
-    }
+  .nav-items div {
+    font-size: 16px;
+  }
 
-    .hero-section-left {
-        align-items: center;
-    }
+  .hero-section {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    align-items: center;
+  }
 
-    .hero-section-heading {
-        font-size: 30px;
-    }
+  .hero-section-left, .hero-section-right {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .hero-section-sub-heading {
-        font-size: 35px;
-    }
+  .hero-section-description {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+  }
 
-    .hero-section-description {
-        width: 90%;
-        font-size: 14px;
-    }
+  .btn-pink {
+    margin: 0 auto;
+  }
 
-    .userImage {
-        width: 250px;
-        height: 300px;
-    }
+  .faded-text {
+    font-size: 3em;
+    bottom: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-section-heading {
+    font-size: 28px;
+  }
+
+  .hero-section-sub-heading {
+    font-size: 32px;
+  }
+
+  .userImage {
+    width: 250px;
+    height: auto;
+    padding: 1.5rem;
+    margin: 0 auto;
+  }
+
+  .project-card {
+    width: 90%;
+    height: 400px;
+  }
+
+  .project-content {
+    bottom: 10%;
+    left: 10%;
+    right: 10%;
+  }
+
+  .project-heading {
+    font-size: 35px;
+  }
+
+  .skill-container {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .Skill-container-left, .Skill-container-right {
+    width: 100%;
+  }
+
+  .skill-faded-text {
+    font-size: 5em;
+    bottom: -10%;
+  }
+
+  .form {
+    width: 90%;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .link-wrapper, .icon-wrapper {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-section-heading {
+    font-size: 24px;
+  }
+
+  .hero-section-sub-heading {
+    font-size: 28px;
+  }
+
+  .userImage {
+    width: 200px;
+  }
+
+  .project-heading {
+    font-size: 28px;
+  }
+
+  .skill-heading span {
+    font-size: 60px;
+  }
+
+  .nav-items {
+    gap: 10px;
+  }
+
+  .nav-items div {
+    font-size: 14px;
+  }
+
+  .userImage {
+    width: 200px;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 480px) {
